@@ -282,6 +282,16 @@ const changeCurrentPassword= asyncHandller(async(req, res)=>{
     )
 })
 
+//get current User
+
+const getCurrentUser= asyncHandller(async(req,res)=>{
+    return res
+    .status(200)
+    .json(200,req.user, "Current user fetched Successfully")
+})
+
+
+
 
 export {
     registerUser,
